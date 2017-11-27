@@ -27,38 +27,54 @@
             android:text="@string/yonghuiming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/piniglun_item_zanshu"
+            android:id="@+id/piniglun_item_dianzantubiao"
+            android:src="@drawable/praise_of"
+            android:layout_width="17dp"
+            android:layout_height="17dp" />
         <TextView
             android:textColor="#999"
             android:textSize="12sp"
             android:layout_marginTop="10dp"
             android:id="@+id/piniglun_item_zanshu"
             android:layout_alignParentRight="true"
-            android:drawableLeft="@mipmap/arrow_right"
             android:text="46"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:textColor="#666"
+        android:textSize="14sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/piniglun_item_content"
         android:text="46-------------------------------------------"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="17dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:textColor="#333"
+            android:textSize="12sp"
             android:id="@+id/piniglun_item_time"
-            android:text="2015"
+            android:text="5小时前"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            android:textColor="#333"
+            android:textSize="12sp"
             android:layout_marginLeft="20dp"
             android:id="@+id/piniglun_item_huifu"
-            android:text="70"
+            android:text="70回复"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
