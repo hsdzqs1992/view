@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/piniglun_item_touxiang"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/piniglun_item_touxiang"
+            android:id="@+id/piniglun_item_name"
+            android:text="@string/yonghuiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#999"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/piniglun_item_zanshu"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/arrow_right"
+            android:text="46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/piniglun_item_content"
+        android:text="46-------------------------------------------"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/piniglun_item_time"
+            android:text="2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/piniglun_item_huifu"
+            android:text="70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

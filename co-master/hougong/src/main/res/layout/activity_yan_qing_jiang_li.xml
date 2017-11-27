@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_yan_qing_jiang_li"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.hougong.view.YanQingJiangLiActivity">
+
+    <ImageView
+        android:id="@+id/yaoqingjiangli_toubeijing"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.zhuye.hougong.weidgt.MyToolBar2
+        android:id="@+id/yaoqingjiangli_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhuye.hougong.weidgt.MyToolBar2>
+
+    <LinearLayout
+        android:id="@+id/yaoqingjiangli_ll"
+        android:layout_below="@+id/yaoqingjiangli_toubeijing"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="邀请好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="去完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="绑定QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="去完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="绑定微信"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="去完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="自拍认证"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="去完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/red"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/yaoqingjiangli_ll"
+        android:layout_centerInParent="true"
+        android:drawableRight="@mipmap/arrow_right"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="完成以上步骤额外赚取50金币"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

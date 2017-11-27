@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/whosend_touxiang"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/whosend_touxiang"
+        android:id="@+id/whosend_name"
+        android:text="@string/yonghuiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/whosend_name"
+        android:id="@+id/whosend_age"
+        android:text="22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/whosend_name"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/whosend_touxiang"
+        android:id="@+id/whosend_liwu"
+        android:text="22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_normal"
+        android:id="@+id/whosend_huizeng"
+        android:text="回赠"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
