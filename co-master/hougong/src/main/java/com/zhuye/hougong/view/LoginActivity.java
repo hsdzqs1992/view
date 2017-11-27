@@ -140,8 +140,15 @@ public class LoginActivity extends AppCompatActivity {
         EMClient.getInstance().login(phone, pass, new EMCallBack() {
             @Override
             public void onSuccess() {
-                CommentUtils.toast(LoginActivity.this,"登录成功");
-                finish();
+                //CommentUtils.toast(LoginActivity.this,"登录成功");
+                //finish();
+                runOnUiThread(new Runnable() {
+                                  @Override
+                                  public void run() {
+                                      CommentUtils.toast(LoginActivity.this,"登录成功");
+                                  }
+                              }
+                );
             }
 
             @Override

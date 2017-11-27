@@ -109,15 +109,29 @@ public class RegeistActivity extends AppCompatActivity {
                     return;
                 }
 
-                try {
-                    EMClient.getInstance().createAccount(phone,pass);
-                    startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
-                    CommentUtils.toast(RegeistActivity.this,"注册成功");
-                    finish();
-                } catch (HyphenateException e) {
-                    CommentUtils.toast(RegeistActivity.this,"注册失败"+e.getMessage());
-                    //e.printStackTrace();
-                }
+
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                EMClient.getInstance().createAccount(phone,pass);
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
+                                        CommentUtils.toast(RegeistActivity.this,"注册成功");
+                                        finish();
+                                    }
+                                });
+
+                            } catch (HyphenateException e) {
+                                CommentUtils.toast(RegeistActivity.this,"注册失败"+e.getMessage());
+                                //e.printStackTrace();
+                            }
+                        }
+                    }).start();
+                   // EMClient.getInstance().createAccount("username","123456")
+
 
                 startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
                 finish();
