@@ -12,12 +12,15 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.exceptions.HyphenateException;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
 import com.zhuye.hougong.R;
 import com.zhuye.hougong.bean.Code;
 import com.zhuye.hougong.contants.Contants;
+import com.zhuye.hougong.utils.CommentUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -106,21 +109,21 @@ public class RegeistActivity extends AppCompatActivity {
                     return;
                 }
 
-//                try {
-//                    EMClient.getInstance().createAccount(phone,pass);
-//                    startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
-//                    CommentUtils.toast(RegeistActivity.this,"注册成功");
-//                    finish();
-//                } catch (HyphenateException e) {
-//                    CommentUtils.toast(RegeistActivity.this,"注册失败"+e.getMessage());
-//                    //e.printStackTrace();
-//                }
+                try {
+                    EMClient.getInstance().createAccount(phone,pass);
+                    startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
+                    CommentUtils.toast(RegeistActivity.this,"注册成功");
+                    finish();
+                } catch (HyphenateException e) {
+                    CommentUtils.toast(RegeistActivity.this,"注册失败"+e.getMessage());
+                    //e.printStackTrace();
+                }
 
-//                startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
-//                finish();
+                startActivity(new Intent(RegeistActivity.this, LoginActivity.class));
+                finish();
 
 
-                regeistFromServer();
+                //regeistFromServer();
                 break;
         }
     }

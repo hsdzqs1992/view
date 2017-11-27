@@ -148,6 +148,13 @@ public class MeFragment extends Fragment {
         //CommentUtils.toast(getActivity(),"hhhhhhhhhhh");
     };
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        //// TODO: 2017/11/27
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

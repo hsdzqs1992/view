@@ -13,7 +13,7 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-       // multiDexEnabled true
+       multiDexEnabled true
 
     }
     buildTypes {
@@ -56,12 +56,10 @@ dependencies {
     compile('com.mikepenz:materialdrawer:6.0.2@aar') {
         transitive = true
     }
-
-    //compile 'com.android.support:MultiDex:1.0.1'
-
+    compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:support-annotations:26.0.0-alpha1'
     compile files('src/libs/weibosdkcore.jar')
     compile 'org.greenrobot:eventbus:3.1.1'
-   // compile project(':easeui')
-
+    // compile project(':easeui')
+    compile project(':easeui')
 }
